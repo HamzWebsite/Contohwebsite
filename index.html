@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana dengan JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link" data-page="home">Beranda</a></li>
+                <li><a href="#" class="nav-link" data-page="about">Tentang</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page active">
+            <h2>Beranda</h2>
+            <p>Ini adalah halaman beranda website sederhana dengan JavaScript.</p>
+            <button id="changeColorBtn">Ubah Warna Background</button>
+            <button id="greetBtn">Sapa Saya</button>
+        </section>
+
+        <section id="about" class="page">
+            <h2>Tentang Kami</h2>
+            <p>Ini adalah halaman tentang kami. Kami membuat website sederhana ini untuk demonstrasi.</p>
+            <div id="counter">
+                <p>Pengunjung hari ini: <span id="visitCount">0</span></p>
+                <button id="incrementBtn">Tambah Hitungan</button>
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <h2>Hubungi Kami</h2>
+            <form id="contactForm">
+                <div>
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit">Kirim</button>
+            </form>
+            <div id="formResponse"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Website Sederhana. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
